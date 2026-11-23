@@ -1,0 +1,50 @@
+{
+  "seed": 42,
+  "split": "80/20 stratified",
+  "cv": "3-fold StratifiedKFold on train",
+  "selection_metric": "cv_roc_auc_mean",
+  "best_by_cv": "Random Forest",
+  "contract_model": "Random Forest",
+  "experiments": [
+    {
+      "model": "Random Forest",
+      "cv_roc_auc_mean": 0.78034,
+      "cv_roc_auc_std": 0.01645,
+      "roc_auc": 0.83143,
+      "accuracy": 0.775,
+      "precision": 0.77143,
+      "recall": 0.96429,
+      "f1": 0.85714
+    },
+    {
+      "model": "Extra Trees",
+      "cv_roc_auc_mean": 0.75829,
+      "cv_roc_auc_std": 0.02353,
+      "roc_auc": 0.815,
+      "accuracy": 0.755,
+      "precision": 0.77576,
+      "recall": 0.91429,
+      "f1": 0.83934
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_roc_auc_mean": 0.76061,
+      "cv_roc_auc_std": 0.02532,
+      "roc_auc": 0.82905,
+      "accuracy": 0.76,
+      "precision": 0.76744,
+      "recall": 0.94286,
+      "f1": 0.84615
+    },
+    {
+      "model": "Random Forest (leaf=1)",
+      "cv_roc_auc_mean": 0.76813,
+      "cv_roc_auc_std": 0.01394,
+      "roc_auc": 0.83244,
+      "accuracy": 0.8,
+      "precision": 0.80488,
+      "recall": 0.94286,
+      "f1": 0.86842
+    }
+  ]
+}
